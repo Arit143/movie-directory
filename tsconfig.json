@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "es6",
+        "target": "es5",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "jsx": "react",
+        "lib": ["es5", "es6", "dom"],
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "noEmit": true
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "webpack",
+      "jest",
+      "src/setupTests.ts",
+      "dist"
+    ],
+}
