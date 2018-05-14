@@ -43,9 +43,9 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     public componentWillMount() {
-        axios.get('https://interview.zocdoc.com/api/1/FEE/AllMovies', {
+        axios.get('MOVIE_API_URL', {
             params: {
-              authToken: '3b502b3f-b1ff-4128-bd99-626e74836d9c',
+              authToken: 'MOVIE_API_TOKEN',
             },
         })
         .then((response: AxiosResponse<AllMovieResponse[]>) => {
