@@ -4,7 +4,6 @@
         "module": "es6",
         "target": "es5",
         "sourceMap": true,
-        "noImplicitAny": false,
         "jsx": "react",
         "lib": ["es5", "es6", "dom"],
         "moduleResolution": "node",
