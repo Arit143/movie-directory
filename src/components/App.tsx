@@ -1,9 +1,10 @@
 import * as React from 'react';
-import axios, { AxiosResponse } from 'axios';
+// import axios, { AxiosResponse } from 'axios';
 import * as _ from 'lodash';
 import * as Styles from './App.styled';
 
 import Movie from './movies/index';
+import catImage from './../assets/cat.gif';
 
 interface AppProps {
 
@@ -43,7 +44,7 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     public componentWillMount() {
-        axios.get('MOVIE_API_URL', {
+        /* axios.get('MOVIE_API_URL', {
             params: {
               authToken: 'MOVIE_API_TOKEN',
             },
@@ -56,12 +57,13 @@ class App extends React.Component<AppProps, AppState> {
         })
         .catch((error: Error) => {
             // console.log(error);
-        });
+        }); */
     }
 
     render() {
         return (
             <React.Fragment>
+                <img src={catImage} />
                 Showing {this.renderNumberOfMovieToSelect()} titles
                 Genre {this.renderGenreList()}
                 <input
